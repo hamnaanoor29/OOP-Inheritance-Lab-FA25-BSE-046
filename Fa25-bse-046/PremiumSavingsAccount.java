@@ -5,11 +5,10 @@ class PremiumSavingsAccount extends SavingsAccount {
     private int rewardPoints;
     private double bonusRate;
 
-    // Constructor
     PremiumSavingsAccount(String accountNo, String holderName, double balance,
                           double interestRate, double minBalance,
                           int rewardPoints, double bonusRate) {
-        super(accountNo, holderName, balance, interestRate, minBalance); // parent constructor
+        super(accountNo, holderName, balance, interestRate, minBalance); 
         this.rewardPoints = rewardPoints;
         this.bonusRate = bonusRate;
 
