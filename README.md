@@ -1,67 +1,22 @@
-# Banking System Inheritance Assignment
+# Banking System - Multilevel Inheritance
 
-## Student Information
-
-**Name:** Hamna Noor
+**Name:** Hamna Noor 
 **Registration Number:** FA25-BSE-046
 
 ## Assigned Hierarchy
 
-**BankAccount → SavingsAccount → PremiumSavingsAccount**
+BankAccount → SavingsAccount → PremiumSavingsAccount
 
-## Program Description
+## Description
 
-This program demonstrates **Multilevel Inheritance** in Java using a banking system.
+This Java program demonstrates **multilevel inheritance** using a banking system.
 
-### 1. BankAccount (Base Class)
+* **BankAccount:** accountNo, holderName, balance
+* **SavingsAccount:** interestRate, minBalance
+* **PremiumSavingsAccount:** rewardPoints, bonusRate
 
-This class contains basic bank account information:
+**Methods Used:**
+displayInfo(), deposit(), withdraw(), calculateInterest()
 
-* accountNo
-* holderName
-* balance
+The program shows how different account types inherit properties and methods from parent classes.
 
-**Methods:**
-
-* displayInfo() — Displays account details
-* deposit() — Adds amount to balance
-* withdraw() — Deducts amount from balance
-
----
-
-### 2. SavingsAccount (Derived from BankAccount)
-
-This class extends **BankAccount** and adds:
-
-* interestRate
-* minBalance
-
-**Additional Method:**
-
-* calculateInterest() — Calculates interest based on balance
-
----
-
-### 3. PremiumSavingsAccount (Derived from SavingsAccount)
-
-This class extends **SavingsAccount** and adds:
-
-* rewardPoints
-* bonusRate
-
-This class represents premium customers with additional benefits and higher interest bonus.
-
----
-
-## Concepts Used
-
-* Multilevel Inheritance
-* Method Reuse
-* Encapsulation
-* Method Overriding (if implemented)
-
----
-
-## Purpose
-
-The purpose of this program is to demonstrate how inheritance works in Java by modeling a real-world banking system with different account types.
