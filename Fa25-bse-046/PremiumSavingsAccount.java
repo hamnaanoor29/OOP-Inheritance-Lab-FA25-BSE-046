@@ -1,5 +1,3 @@
-
-
 class PremiumSavingsAccount extends SavingsAccount {
 
     private int rewardPoints;
