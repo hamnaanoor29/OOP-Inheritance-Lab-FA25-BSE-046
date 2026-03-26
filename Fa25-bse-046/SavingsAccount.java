@@ -6,7 +6,7 @@ class SavingsAccount extends BankAccount {
     private double minBalance;
 
     SavingsAccount(String accountNo, String holderName, double balance, double interestRate, double minBalance) {
-        super(accountNo, holderName, balance); // parent constructor call
+        super(accountNo, holderName, balance); 
         this.interestRate = interestRate;
         this.minBalance = minBalance;
 
@@ -49,7 +49,7 @@ class SavingsAccount extends BankAccount {
 
     @Override
     void displayInfo() {
-        super.displayInfo(); // parent info
+        super.displayInfo();
         System.out.println("Interest Rate: " + interestRate + "%");
         System.out.println("Minimum Balance: " + minBalance);
     }
